@@ -150,6 +150,7 @@ function dind::init_auth {
       cfssljson -bare apiserver
 EOF
   )"
+  cat "${auth_dir}/apiserver.pem" "${auth_dir}/ca.pem" > "${auth_dir}/apiserver-bundle.pem"
 }
 
 # Instantiate a kubernetes cluster.

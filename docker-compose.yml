@@ -71,7 +71,7 @@ apiserver:
     --service-cluster-ip-range=${SERVICE_CIDR}
     --service-node-port-range=30000-32767
     --allow-privileged
-    --tls-cert-file=/var/run/kubernetes/auth/apiserver.pem
+    --tls-cert-file=/var/run/kubernetes/auth/apiserver-bundle.pem
     --tls-private-key-file=/var/run/kubernetes/auth/apiserver-key.pem
     --runtime-config=api/all
     --v=4
